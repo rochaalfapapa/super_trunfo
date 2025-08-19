@@ -7,6 +7,7 @@ int main (){
     char codigo1[4], codigo2[4], cidade1[20], cidade2[20];
     int populacao1, populacao2, pontos1, pontos2;
     float area1, area2, pib1, pib2;
+    float densidade1, densidade2, pibpercapta1, pibpercapta2;
 
     //Mensagem de introdução ao usuário
     printf("Olá, Bem vindo ao Super Trunfo!\n\n\nPrimeiramente vamos começar cadastrando os dados de duas cidades.\n\n");
@@ -43,11 +44,18 @@ int main (){
     printf("Digite a quantidade de pontos turísticos da segunda cidade:\n");
     scanf("%d", &pontos2);
 
+    //Cálculo da Densidade Populacional e do Pib per Capita das duas cidades
+
+    densidade1 = (float) populacao1 / area1;
+    densidade2 = (float) populacao2 / area2;
+    pibpercapta1 =  (float) ((pib1*1000000000) / populacao1);
+    pibpercapta2 = (float) ((pib2*1000000000) / populacao2);
+
     //Retornando os dados das duas cidades
     printf("-------------------------------------------------------------------------------------------------------------");
     printf("\nAgora vamos visualizar as informações cadastradas:\n\n");
-    printf("Carta 1\n\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d habitantes\nÁrea: %.1f km²\nPIB: %.2f bilhões de reais\nNúmero de pontos turísticos: %d\n\n", estado1, codigo1, cidade1, populacao1, area1, pib1, pontos1);
-    printf("\n\nCarta 2\n\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d habitantes\nÁrea: %.1f km²\nPIB: %.2f bilhões de reais\nNúmero de pontos turísticos: %d\n\n", estado2, codigo2, cidade2, populacao2, area2, pib2, pontos2);
+    printf("Carta 1\n\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d habitantes\nÁrea: %.1f km²\nPIB: %.2f bilhões de reais\nNúmero de pontos turísticos: %d\nDensidade populacional: %.2f hab/km²\nPIB per Capita: %.2f\n\n", estado1, codigo1, cidade1, populacao1, area1, pib1, pontos1, densidade1, pibpercapta1);
+    printf("\n\nCarta 2\n\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d habitantes\nÁrea: %.1f km²\nPIB: %.2f bilhões de reais\nNúmero de pontos turísticos: %d\nDensidade populacional: %.2f hab/km²\nPIB per Capita: %.2f\n\n", estado2, codigo2, cidade2, populacao2, area2, pib2, pontos2, densidade2, pibpercapta2);
 
     return 0;
 }
