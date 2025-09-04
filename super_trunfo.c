@@ -21,9 +21,9 @@ int main (){
     printf("Primeira cidade:\n\nInsira o Estado (uma letra de 'A' a 'H' - representando um dos oito estados):\n");
     scanf(" %c", &estado1);
     printf("Digite o Código da Carta (letra do estado seguida de um número de 01 a 04 - ex: A01, B03):\n");
-    scanf("%s", &codigo1);
+    scanf("%s", codigo1);
     printf("Digite o nome da cidade (sem ser nome composto):\n");
-    scanf("%s", &cidade1);
+    scanf("%s", cidade1);
     printf("Digite o número de habitantes da cidade:\n");
     scanf("%lu", &populacao1);
     printf("Digite a área da cidade (em km²):\n");
@@ -37,9 +37,9 @@ int main (){
     printf("\n\nAgora vamos iniciar o cadastramento da segunda cidade.\n\nPor gentileza, insira o segundo Estado (uma letra de 'A' a 'H' - representando um dos oito estados):\n ");
     scanf(" %c", &estado2);
     printf("Digite o Código da Carta (letra do estado seguida de um número de 01 a 04 - ex: A01, B03):\n");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
     printf("Digite o nome da cidade (sem ser nome composto):\n");
-    scanf("%s", &cidade2);
+    scanf("%s", cidade2);
     printf("Digite o número de habitantes da cidade:\n");
     scanf("%lu", &populacao2);
     printf("Digite a área da cidade (em km²):\n");
