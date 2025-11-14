@@ -78,5 +78,14 @@ int main (){
     //Retornando os resultados das comparações dos atributos
     printf("\n\nComparação das Cartas:\n\nPopulação: Carta 1 Venceu (%d)\nÁrea: Carta 1 Venceu (%d)\nPIB: Carta 1 Venceu (%d)\nPontos Turísticos: Carta 1 Venceu (%d)\nDensidade Populacional: Carta 1 Venceu (%d)\nPIB per Capta: Carta 1 Venceu (%d)\nSuper Poder: Carta 1 Venceu (%d)\n\n\n", resultadoPopulacao, resultadoArea, resultadoPib, resultadoPontos, resultadoDensidade, resultadoPibPerCapta, resultadoSuperPoder);
 
+    //Comparação de um atritubo - Utilizando estrutura de decisão
+
+    if (populacao1 > populacao2){
+        printf("Comparação de cartas (Atributo: População):\n\nCarta 1 - %s: %lu\nCarta 2 - %s: %lu\nResultado: Carta 1(%s) venceu!\n\n", cidade1, populacao1, cidade2, populacao2, cidade1);
+    } else {
+        printf("Comparação de cartas (Atributo: População):\n\nCarta 1 - %s: %lu\nCarta 2 - %s: %lu\nResultado: Carta 2(%s) venceu!\n\n", cidade1, populacao1, cidade2, populacao2, cidade2);
+    }
+
+
     return 0;
 }
